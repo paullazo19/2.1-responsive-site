@@ -1,0 +1,495 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html{
+  /* changes default font size to measure .1rem == 1px */
+  font-size: 62.5%;
+}
+body {
+  font-size: 0;
+}
+.wrapper{
+  width: 100%;
+}
+.main__nav{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.main__nav--link{
+  font-size: 1.6rem;
+  width: 22%;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(60, 60, 60);
+  text-transform: capitalize;
+  /*background-color: green;*/
+}
+.main__nav--link__logo{
+  font-size: 1.6rem;
+  width: 34%;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(60, 60, 60);
+  text-transform: uppercase;
+  /*background-color: blue;*/
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.main{
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 4.8rem;
+}
+.main__heading{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-weight: 400;
+  text-shadow: 0px 1px rgb(40, 40, 40);
+  padding-top: 6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+}
+.main__image{
+  /*width: 100%;*/
+}
+.article__offer--headingPersonal {
+  background-color: rgb(77, 145, 88);
+  position: relative;
+  display: block;
+  height: 22rem;
+  padding-top: 3rem;
+}
+.article__offer--headingPersonal h3{
+  color: rgb(255,255,255);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 500;
+}
+.article__offer--headingPersonal h2{
+  color: rgb(255,255,255);
+  text-transform: uppercase;
+  font-size: 10rem;
+  /*letter-spacing: 3px;*/
+  text-align: center;
+  font-weight: 300;
+}
+.article__offer--headingPersonal h4{
+  color: rgba(255,255,255, 0.5);
+  text-transform: uppercase;
+  font-size: 2rem;
+  /*letter-spacing: 3px;*/
+  text-align: center;
+  font-weight: 500;
+}
+.article__offer--headingBusiness {
+  background-color: rgb(45, 74, 129);
+  position: relative;
+  display: block;
+  height: 22rem;
+  padding-top: 3rem;
+}
+.article__offer--headingBusiness h3{
+  color: rgb(255,255,255);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 500;
+}
+.article__offer--headingBusiness h2{
+  color: rgb(255,255,255);
+  text-transform: uppercase;
+  font-size: 10rem;
+  /*letter-spacing: 3px;*/
+  text-align: center;
+  font-weight: 300;
+}
+.article__offer--headingBusiness h4{
+  color: rgba(255,255,255, 0.5);
+  text-transform: uppercase;
+  font-size: 2rem;
+  /*letter-spacing: 3px;*/
+  text-align: center;
+  font-weight: 500;
+}
+.article__offer--headingEnterprise {
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  display: block;
+  height: 22rem;
+  padding-top: 3rem;
+}
+.article__offer--headingEnterprise h3{
+  color: rgb(255,255,255);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 500;
+}
+.article__offer--headingEnterprise h2{
+  color: rgb(255,255,255);
+  text-transform: uppercase;
+  font-size: 10rem;
+  /*letter-spacing: 3px;*/
+  text-align: center;
+  font-weight: 300;
+}
+.article__offer--headingEnterprise h4{
+  color: rgba(255,255,255, 0.5);
+  text-transform: uppercase;
+  font-size: 2rem;
+  /*letter-spacing: 3px;*/
+  text-align: center;
+  font-weight: 500;
+}
+.article__offer--list li{
+    display: block;
+    text-align: center;
+    position: relative;
+    height: 4.5rem;
+    color: rgb(40,40,40);
+    font-size: 1.6rem;
+    /*letter-spacing: 3px;*/
+    font-weight: 500;
+    /*margin-top: 25rem;*/
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+    background-color: rgb(245, 245, 245);
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+.columnThird {
+  margin-bottom: 3rem;
+}
+.article__offer--personal{
+  /*height: 57rem;*/
+  width: 100%;
+  position: relative;
+  font-size: 1.4rem;
+  text-align: center;
+  border: 1px solid rgb(230, 230, 230);
+  background-color: rgb(255, 255, 255);
+}
+.article__offer--business{
+  /*height: 57rem;*/
+  width: 100%;
+  position: relative;
+  font-size: 1.4rem;
+  text-align: center;
+  border: 1px solid rgb(230, 230, 230);
+  background-color: rgb(255, 255, 255);
+}
+.article__offer--enterprise{
+  /*height: 57rem;*/
+  width: 100%;
+  position: relative;
+  font-size: 1.4rem;
+  text-align: center;
+  border: 1px solid rgb(230, 230, 230);
+  background-color: rgb(255, 255, 255);
+}
+.articles__offers{
+  font-size: 1.4rem;
+  width: 95%;
+  margin: 0 auto;
+}
+.article__offer--link{
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  color: rgb(30, 30, 30);
+  border: 1px solid rgb(230, 230, 230);
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border-radius: 2.25rem;
+  text-decoration: none;
+  /*text-align: center;*/
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.articles{
+  font-size: 1.4rem;
+  width: 85%;
+  margin: 0 auto;
+}
+.columnHalf{
+  margin-top: 5rem;
+}
+.articles__general--headline{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  margin-bottom: 2rem;
+}
+.articles__general--text{
+  font-weight: 400;
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+}
+footer{
+  font-size: 1.4rem;
+  background-color: rgb(0, 0, 0);
+}
+.footer__text{
+  color: rgb(140, 140, 140);
+  padding: 2rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin-top: 2rem;
+
+}
+.footer__link{
+  color: rgb(255, 255, 255);
+}
+/* ************** STYLEGUIDE ************************/
+.wrapper__styleguide{
+  width: 90%;
+  font-size: 1.4rem;
+  margin: 0 auto;
+}
+.styleguide__list{
+}
+.styleguide__list li{
+  /*text-transform: uppercase;*/
+  margin-bottom: 2rem;
+}
+.styleguide__list h2{
+  color: rgb(200, 200, 200);
+  padding-bottom: 1rem;
+}
+.square__green{
+  display: inline-block;
+  border: 50px solid rgb(77, 145, 88);
+  height: 2rem;
+  width: 2rem;
+}
+.square__green p{
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-left: -5rem;
+  width: 10rem;
+}
+.square__blue{
+  display: inline-block;
+  border: 50px solid rgb(45, 74, 129);
+  height: 2rem;
+  width: 2rem;
+}
+.square__blue p{
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-left: -5rem;
+  width: 10rem;
+}
+.square__black{
+  display: inline-block;
+  border: 50px solid rgb(0, 0, 0);
+  height: 2rem;
+  width: 2rem;
+}
+.square__black p{
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-left: -5rem;
+  width: 10rem;
+}
+.main__heading--styleguide{
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.style__link{
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+.list__style{
+    display: block;
+    text-align: center;
+    position: relative;
+    height: 4.5rem;
+    color: rgb(40,40,40);
+    font-size: 1.6rem;
+    /*letter-spacing: 3px;*/
+    font-weight: 500;
+    /*margin-top: 25rem;*/
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+    background-color: rgb(245, 245, 245);
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+.single{
+  border: 1px solid rgb(100, 100, 100);
+  width: 95%;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.double{
+  border: 1px solid rgb(100, 100, 100);
+  width: 46%;
+  padding: 1rem;
+  margin: 0.5rem;
+  float: left;
+}
+.triple{
+  border: 1px solid rgb(100, 100, 100);
+  width: 31%;
+  padding: 1rem;
+  margin: 0.25rem;
+  float: left;
+}
+/* ************** MEDIA QUERIES ******************** */
+@media only screen
+  and (min-width: 479px)
+  and (max-width: 767px) {
+    body{
+      /*background-color: red;*/
+    }
+    .main__nav--link{
+      width: 20%;
+    }
+    .main__nav--link__logo{
+      width: 25%;
+    }
+    .main__heading{
+      font-size: 4rem;
+      padding-top: 10rem;
+    }
+    .main{
+      height: 30rem;
+    }
+}
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 978px) {
+    body{
+      /*background-color: blue;*/
+    }
+    .main__nav--link{
+      width: 10%;
+    }
+    .main__nav--link__logo{
+      width: 20%;
+    }
+    .main__heading{
+      font-size: 4rem;
+      padding-top: 10rem;
+    }
+    .main{
+      height: 30rem;
+    }
+    .columnThird{
+      width: 33.333%;
+      float: left;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .columnHalf{
+      width: 50%;
+      float: left;
+      vertical-align: top;
+      /*margin-right: 2rem;*/
+    }
+    .articles{
+      clear: both;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    .articles__general{
+      padding-left: 5rem;
+      padding-right: 5rem;
+      /*display: inline-block;*/
+      /*vertical-align: top;*/
+      /*background-color: purple;*/
+      margin-bottom: 3rem;
+    }
+    footer{
+      clear: both;
+    }
+    .articles__general--text{
+      font-weight: 400;
+      line-height: 2rem;
+      /*font-size: 1.4rem;*/
+      /*display: none;*/
+    }
+}
+@media only screen
+  and (min-width: 979px) {
+    body{
+      /*background-color: yellow;*/
+    }
+    .articles__offers{
+      width: 80%;
+      margin: 0 auto;
+    }
+    .main__nav--link{
+      width: 10%;
+    }
+    .main__nav--link__logo{
+      width: 15%;
+    }
+    .main__heading{
+      font-size: 4rem;
+      padding-top: 10rem;
+    }
+    .main{
+      height: 30rem;
+    }
+    .columnThird{
+      width: 33.333%;
+      float: left;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .columnHalf{
+      width: 50%;
+      float: left;
+      vertical-align: top;
+      /*margin-right: 2rem;*/
+    }
+    .articles{
+      clear: both;
+      width: 80%;
+      margin-bottom: 2rem;
+      margin: 0 auto;
+    }
+    .articles__general{
+      padding-left: 7rem;
+      padding-right: 7rem;
+      /*display: inline-block;*/
+      /*vertical-align: top;*/
+      /*background-color: purple;*/
+      margin-bottom: 3rem;
+    }
+    footer{
+      clear: both;
+    }
+    .articles__general--text{
+      font-weight: 400;
+      line-height: 2rem;
+      /*font-size: 1.4rem;*/
+      /*display: none;*/
+    }
+}
